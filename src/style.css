@@ -1,0 +1,160 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  background-color: black;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.window {
+  width: 28rem;
+  max-width: 450px;
+  height: 96vh;
+  background-color: #fffcfc;
+  box-shadow: 0 0 12px rgba(243, 146, 146, 0.6);
+  border-radius: 13px;
+  overflow-y: scroll;
+}
+
+/* Scroll bar */
+.window::-webkit-scrollbar {
+  width: 9px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.window::-webkit-scrollbar-track {
+  background: #f7d2d2;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.window::-webkit-scrollbar-thumb {
+  background: rgb(255, 90, 90);
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.window::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 39, 39);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 57px;
+  box-shadow: 0 1px 8px rgba(158, 118, 118, 0.5);
+}
+
+.navbar img {
+  width: 100px;
+  max-width: 100px;
+  margin-left: 14px;
+}
+
+/* Hero section */
+.hero img {
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 20px auto;
+}
+
+.hero > div {
+  padding: 0 28px;
+  text-align: justify;
+}
+
+.hero h1 {
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.hero p {
+  font-size: 12px;
+}
+
+/* Card */
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.card:first-child {
+  margin-left: 25px;
+}
+.card:last-child {
+  margin-right: 25px;
+}
+.cards::-webkit-scrollbar {
+  width: 0;
+}
+.card {
+  position: relative;
+  min-width: 140px;
+  width: 140px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 10px;
+  /* margin-right: 0; */
+}
+.badge {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: rgba(219, 207, 207, 0.9);
+  color: black;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+.card-logo {
+  width: 100%;
+}
+
+.data {
+  margin: auto 3px;
+}
+
+.star {
+  width: 13px;
+  margin-right: 4px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  font-size: 12px;
+  margin: 3px auto;
+}
+
+.detail {
+  font-size: 12px;
+  margin: 5px auto;
+}
+
+.price {
+  font-size: 13px;
+}
+
+.bold {
+  font-weight: bold;
+}
